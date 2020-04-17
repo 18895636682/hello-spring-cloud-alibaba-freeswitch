@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuzhi.spring.cloud.alibaba.freeswitch.mapper.PushManageMapper">
+  <resultMap id="BaseResultMap" type="com.zhuzhi.spring.cloud.alibaba.freeswitch.domain.PushManage">
+    <!--@mbg.generated generated on Fri Apr 10 11:29:31 CST 2020.-->
+    <!--@Table pushManage-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pushType" jdbcType="VARCHAR" property="pushType" />
+    <result column="pushStrategy" jdbcType="VARCHAR" property="pushStrategy" />
+    <result column="pushMethod" jdbcType="VARCHAR" property="pushMethod" />
+    <result column="pushUrl" jdbcType="VARCHAR" property="pushUrl" />
+    <result column="consumerId" jdbcType="VARCHAR" property="consumerId" />
+    <result column="gateway" jdbcType="VARCHAR" property="gateway" />
+    <result column="exten" jdbcType="VARCHAR" property="exten" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="backup_field1" jdbcType="VARCHAR" property="backup_field1" />
+    <result column="backup_field2" jdbcType="VARCHAR" property="backup_field2" />
+    <result column="backup_field3" jdbcType="VARCHAR" property="backup_field3" />
+    <result column="backup_field4" jdbcType="VARCHAR" property="backup_field4" />
+    <result column="backup_field5" jdbcType="VARCHAR" property="backup_field5" />
+    <result column="backup_field6" jdbcType="VARCHAR" property="backup_field6" />
+    <result column="addTime" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="editTime" jdbcType="TIMESTAMP" property="editTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Fri Apr 10 11:29:31 CST 2020.-->
+    id, pushType, pushStrategy, pushMethod, pushUrl, consumerId, gateway, exten, remarks, 
+    backup_field1, backup_field2, backup_field3, backup_field4, backup_field5, backup_field6, 
+    addTime, editTime
+  </sql>
+</mapper>

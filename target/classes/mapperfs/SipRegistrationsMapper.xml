@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuzhi.spring.cloud.alibaba.freeswitch.mapperfs.SipRegistrationsMapper">
+  <resultMap id="BaseResultMap" type="com.zhuzhi.spring.cloud.alibaba.freeswitch.domain.SipRegistrations">
+    <!--@mbg.generated generated on Mon Apr 13 22:23:39 CST 2020.-->
+    <!--@Table sip_registrations-->
+    <result column="call_id" jdbcType="VARCHAR" property="call_id" />
+    <result column="sip_user" jdbcType="VARCHAR" property="sip_user" />
+    <result column="sip_host" jdbcType="VARCHAR" property="sip_host" />
+    <result column="presence_hosts" jdbcType="VARCHAR" property="presence_hosts" />
+    <result column="contact" jdbcType="VARCHAR" property="contact" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="ping_status" jdbcType="VARCHAR" property="ping_status" />
+    <result column="ping_count" jdbcType="INTEGER" property="ping_count" />
+    <result column="ping_time" jdbcType="BIGINT" property="ping_time" />
+    <result column="force_ping" jdbcType="INTEGER" property="force_ping" />
+    <result column="rpid" jdbcType="VARCHAR" property="rpid" />
+    <result column="expires" jdbcType="BIGINT" property="expires" />
+    <result column="ping_expires" jdbcType="INTEGER" property="ping_expires" />
+    <result column="user_agent" jdbcType="VARCHAR" property="user_agent" />
+    <result column="server_user" jdbcType="VARCHAR" property="server_user" />
+    <result column="server_host" jdbcType="VARCHAR" property="server_host" />
+    <result column="profile_name" jdbcType="VARCHAR" property="profile_name" />
+    <result column="hostname" jdbcType="VARCHAR" property="hostname" />
+    <result column="network_ip" jdbcType="VARCHAR" property="network_ip" />
+    <result column="network_port" jdbcType="VARCHAR" property="network_port" />
+    <result column="sip_username" jdbcType="VARCHAR" property="sip_username" />
+    <result column="sip_realm" jdbcType="VARCHAR" property="sip_realm" />
+    <result column="mwi_user" jdbcType="VARCHAR" property="mwi_user" />
+    <result column="mwi_host" jdbcType="VARCHAR" property="mwi_host" />
+    <result column="orig_server_host" jdbcType="VARCHAR" property="orig_server_host" />
+    <result column="orig_hostname" jdbcType="VARCHAR" property="orig_hostname" />
+    <result column="sub_host" jdbcType="VARCHAR" property="sub_host" />
+  </resultMap>
+</mapper>

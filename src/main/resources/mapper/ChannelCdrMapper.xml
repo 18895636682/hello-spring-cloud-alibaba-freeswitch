@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuzhi.spring.cloud.alibaba.freeswitch.mapper.ChannelCdrMapper">
+  <resultMap id="BaseResultMap" type="com.zhuzhi.spring.cloud.alibaba.freeswitch.domain.cdr.ChannelCdr">
+    <!--@mbg.generated generated on Sat Apr 11 16:20:20 CST 2020.-->
+    <!--@Table channel_cdr-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <id column="caller_channel_created_time" jdbcType="TIMESTAMP" property="caller_channel_created_time" />
+    <result column="directiontype" jdbcType="INTEGER" property="directiontype" />
+    <result column="dialtype" jdbcType="INTEGER" property="dialtype" />
+    <result column="isCaller" jdbcType="BOOLEAN" property="isCaller" />
+    <result column="variable_zhuz_same_call_uuid" jdbcType="VARCHAR" property="variable_zhuz_same_call_uuid" />
+    <result column="variable_zhuz_vas_gateway" jdbcType="VARCHAR" property="variable_zhuz_vas_gateway" />
+    <result column="channel_hit_dialplan" jdbcType="BOOLEAN" property="channel_hit_dialplan" />
+    <result column="caller_ani" jdbcType="VARCHAR" property="caller_ani" />
+    <result column="variable_caller_id" jdbcType="VARCHAR" property="variable_caller_id" />
+    <result column="caller_username" jdbcType="VARCHAR" property="caller_username" />
+    <result column="caller_caller_id_name" jdbcType="VARCHAR" property="caller_caller_id_name" />
+    <result column="caller_caller_id_number" jdbcType="VARCHAR" property="caller_caller_id_number" />
+    <result column="caller_callee_id_name" jdbcType="VARCHAR" property="caller_callee_id_name" />
+    <result column="caller_callee_id_number" jdbcType="VARCHAR" property="caller_callee_id_number" />
+    <result column="variable_sip_from_user" jdbcType="VARCHAR" property="variable_sip_from_user" />
+    <result column="variable_sip_to_user" jdbcType="VARCHAR" property="variable_sip_to_user" />
+    <result column="variable_sip_contact_user" jdbcType="VARCHAR" property="variable_sip_contact_user" />
+    <result column="variable_dialed_user" jdbcType="VARCHAR" property="variable_dialed_user" />
+    <result column="variable_digits_dialed" jdbcType="VARCHAR" property="variable_digits_dialed" />
+    <result column="variable_dtmf_type" jdbcType="VARCHAR" property="variable_dtmf_type" />
+    <result column="variable_dest" jdbcType="VARCHAR" property="variable_dest" />
+    <result column="caller_rdnis" jdbcType="VARCHAR" property="caller_rdnis" />
+    <result column="caller_destination_number" jdbcType="VARCHAR" property="caller_destination_number" />
+    <result column="variable_dialed_extension" jdbcType="VARCHAR" property="variable_dialed_extension" />
+    <result column="caller_orig_caller_id_name" jdbcType="VARCHAR" property="caller_orig_caller_id_name" />
+    <result column="caller_orig_caller_id_number" jdbcType="VARCHAR" property="caller_orig_caller_id_number" />
+    <result column="variable_default_gateway" jdbcType="VARCHAR" property="variable_default_gateway" />
+    <result column="variable_incoming_gateway_number" jdbcType="VARCHAR" property="variable_incoming_gateway_number" />
+    <result column="variable_init_exten_gateway" jdbcType="VARCHAR" property="variable_init_exten_gateway" />
+    <result column="variable_ext_field" jdbcType="VARCHAR" property="variable_ext_field" />
+    <result column="caller_context" jdbcType="VARCHAR" property="caller_context" />
+    <result column="caller_direction" jdbcType="VARCHAR" property="caller_direction" />
+    <result column="caller_profile_created_time" jdbcType="TIMESTAMP" property="caller_profile_created_time" />
+    <result column="caller_channel_answered_time" jdbcType="TIMESTAMP" property="caller_channel_answered_time" />
+    <result column="caller_channel_bridged_time" jdbcType="TIMESTAMP" property="caller_channel_bridged_time" />
+    <result column="caller_channel_hangup_time" jdbcType="TIMESTAMP" property="caller_channel_hangup_time" />
+    <result column="event_date_local" jdbcType="TIMESTAMP" property="event_date_local" />
+    <result column="variable_progress_media_stamp" jdbcType="TIMESTAMP" property="variable_progress_media_stamp" />
+    <result column="variable_progress_stamp" jdbcType="TIMESTAMP" property="variable_progress_stamp" />
+    <result column="variable_record_filename" jdbcType="VARCHAR" property="variable_record_filename" />
+    <result column="channel_name" jdbcType="VARCHAR" property="channel_name" />
+    <result column="variable_bridge_channel" jdbcType="VARCHAR" property="variable_bridge_channel" />
+    <result column="other_leg_channel_name" jdbcType="VARCHAR" property="other_leg_channel_name" />
+    <result column="other_leg_unique_id" jdbcType="VARCHAR" property="other_leg_unique_id" />
+    <result column="other_leg_orig_caller_id_name" jdbcType="VARCHAR" property="other_leg_orig_caller_id_name" />
+    <result column="other_leg_orig_caller_id_number" jdbcType="VARCHAR" property="other_leg_orig_caller_id_number" />
+    <result column="variable_last_bridge_to" jdbcType="VARCHAR" property="variable_last_bridge_to" />
+    <result column="channel_call_uuid" jdbcType="VARCHAR" property="channel_call_uuid" />
+    <result column="unique_id" jdbcType="VARCHAR" property="unique_id" />
+    <result column="channel_presence_id" jdbcType="VARCHAR" property="channel_presence_id" />
+    <result column="variable_a_uuid" jdbcType="VARCHAR" property="variable_a_uuid" />
+    <result column="variable_bridge_uuid" jdbcType="VARCHAR" property="variable_bridge_uuid" />
+    <result column="variable_sip_hangup_disposition" jdbcType="VARCHAR" property="variable_sip_hangup_disposition" />
+    <result column="hangup_cause" jdbcType="VARCHAR" property="hangup_cause" />
+    <result column="variable_last_bridge_hangup_cause" jdbcType="VARCHAR" property="variable_last_bridge_hangup_cause" />
+    <result column="variable_cc_agent_uuid" jdbcType="VARCHAR" property="variable_cc_agent_uuid" />
+    <result column="variable_cc_member_uuid" jdbcType="VARCHAR" property="variable_cc_member_uuid" />
+    <result column="variable_callcenter_string" jdbcType="VARCHAR" property="variable_callcenter_string" />
+    <result column="variable_cc_agent" jdbcType="VARCHAR" property="variable_cc_agent" />
+    <result column="variable_cc_queue" jdbcType="VARCHAR" property="variable_cc_queue" />
+    <result column="variable_cc_side" jdbcType="VARCHAR" property="variable_cc_side" />
+    <result column="variable_cc_queue_answered_epoch" jdbcType="TIMESTAMP" property="variable_cc_queue_answered_epoch" />
+    <result column="variable_cc_queue_joined_epoch" jdbcType="TIMESTAMP" property="variable_cc_queue_joined_epoch" />
+    <result column="variable_last_app" jdbcType="VARCHAR" property="variable_last_app" />
+    <result column="variable_last_arg" jdbcType="VARCHAR" property="variable_last_arg" />
+    <result column="channel_read_codec_name" jdbcType="VARCHAR" property="channel_read_codec_name" />
+    <result column="channel_write_codec_name" jdbcType="VARCHAR" property="channel_write_codec_name" />
+    <result column="variable_presence_id" jdbcType="VARCHAR" property="variable_presence_id" />
+    <result column="variable_sip_user_agent" jdbcType="VARCHAR" property="variable_sip_user_agent" />
+    <result column="variable_remote_media_ip" jdbcType="VARCHAR" property="variable_remote_media_ip" />
+    <result column="variable_remote_media_port" jdbcType="VARCHAR" property="variable_remote_media_port" />
+    <result column="variable_sip_network_ip" jdbcType="VARCHAR" property="variable_sip_network_ip" />
+    <result column="variable_sip_network_port" jdbcType="VARCHAR" property="variable_sip_network_port" />
+    <result column="variable_is_exten" jdbcType="BOOLEAN" property="variable_is_exten" />
+    <result column="variable_is_originate" jdbcType="BOOLEAN" property="variable_is_originate" />
+    <result column="variable_aleg" jdbcType="BOOLEAN" property="variable_aleg" />
+    <result column="variable_record_seconds" jdbcType="INTEGER" property="variable_record_seconds" />
+    <result column="variable_waitsec" jdbcType="INTEGER" property="variable_waitsec" />
+    <result column="variable_answersec" jdbcType="INTEGER" property="variable_answersec" />
+    <result column="variable_playback_seconds" jdbcType="INTEGER" property="variable_playback_seconds" />
+    <result column="variable_hold_accum_seconds" jdbcType="INTEGER" property="variable_hold_accum_seconds" />
+    <result column="variable_progress_mediasec" jdbcType="INTEGER" property="variable_progress_mediasec" />
+    <result column="variable_progresssec" jdbcType="INTEGER" property="variable_progresssec" />
+    <result column="variable_billsec" jdbcType="INTEGER" property="variable_billsec" />
+    <result column="variable_flow_billsec" jdbcType="INTEGER" property="variable_flow_billsec" />
+    <result column="variable_duration" jdbcType="INTEGER" property="variable_duration" />
+    <result column="variable_consumer_id" jdbcType="VARCHAR" property="variable_consumer_id" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Sat Apr 11 16:20:20 CST 2020.-->
+    id, caller_channel_created_time, directiontype, dialtype, isCaller, variable_zhuz_same_call_uuid, 
+    variable_zhuz_vas_gateway, channel_hit_dialplan, caller_ani, variable_caller_id, 
+    caller_username, caller_caller_id_name, caller_caller_id_number, caller_callee_id_name, 
+    caller_callee_id_number, variable_sip_from_user, variable_sip_to_user, variable_sip_contact_user, 
+    variable_dialed_user, variable_digits_dialed, variable_dtmf_type, variable_dest, 
+    caller_rdnis, caller_destination_number, variable_dialed_extension, caller_orig_caller_id_name, 
+    caller_orig_caller_id_number, variable_default_gateway, variable_incoming_gateway_number, 
+    variable_init_exten_gateway, variable_ext_field, caller_context, caller_direction, 
+    caller_profile_created_time, caller_channel_answered_time, caller_channel_bridged_time, 
+    caller_channel_hangup_time, event_date_local, variable_progress_media_stamp, variable_progress_stamp, 
+    variable_record_filename, channel_name, variable_bridge_channel, other_leg_channel_name, 
+    other_leg_unique_id, other_leg_orig_caller_id_name, other_leg_orig_caller_id_number, 
+    variable_last_bridge_to, channel_call_uuid, unique_id, channel_presence_id, variable_a_uuid, 
+    variable_bridge_uuid, variable_sip_hangup_disposition, hangup_cause, variable_last_bridge_hangup_cause, 
+    variable_cc_agent_uuid, variable_cc_member_uuid, variable_callcenter_string, variable_cc_agent, 
+    variable_cc_queue, variable_cc_side, variable_cc_queue_answered_epoch, variable_cc_queue_joined_epoch, 
+    variable_last_app, variable_last_arg, channel_read_codec_name, channel_write_codec_name, 
+    variable_presence_id, variable_sip_user_agent, variable_remote_media_ip, variable_remote_media_port, 
+    variable_sip_network_ip, variable_sip_network_port, variable_is_exten, variable_is_originate, 
+    variable_aleg, variable_record_seconds, variable_waitsec, variable_answersec, variable_playback_seconds, 
+    variable_hold_accum_seconds, variable_progress_mediasec, variable_progresssec, variable_billsec, 
+    variable_flow_billsec, variable_duration, variable_consumer_id
+  </sql>
+</mapper>

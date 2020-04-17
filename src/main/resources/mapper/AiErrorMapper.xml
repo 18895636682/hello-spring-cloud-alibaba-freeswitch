@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuzhi.spring.cloud.alibaba.freeswitch.mapper.AiErrorMapper">
+  <resultMap id="BaseResultMap" type="com.zhuzhi.spring.cloud.alibaba.freeswitch.domain.AiError">
+    <!--@mbg.generated generated on Thu Apr 16 18:04:51 CST 2020.-->
+    <!--@Table ai_error-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="callid" jdbcType="VARCHAR" property="callid" />
+    <result column="callerid" jdbcType="VARCHAR" property="callerid" />
+    <result column="calleeid" jdbcType="VARCHAR" property="calleeid" />
+    <result column="flowdata" jdbcType="VARCHAR" property="flowdata" />
+    <result column="notify" jdbcType="VARCHAR" property="notify" />
+    <result column="errorcode" jdbcType="VARCHAR" property="errorcode" />
+    <result column="message" jdbcType="VARCHAR" property="message" />
+    <result column="error_ip" jdbcType="VARCHAR" property="error_ip" />
+    <result column="error_system_name" jdbcType="VARCHAR" property="error_system_name" />
+    <result column="modelId" jdbcType="VARCHAR" property="modelId" />
+    <result column="currentTime" jdbcType="VARCHAR" property="currentTime" />
+    <result column="addTime" jdbcType="TIMESTAMP" property="addTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Apr 16 18:04:51 CST 2020.-->
+    id, callid, callerid, calleeid, flowdata, `notify`, errorcode, message, error_ip, 
+    error_system_name, modelId, currentTime, addTime
+  </sql>
+</mapper>

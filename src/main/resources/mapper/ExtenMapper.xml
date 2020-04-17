@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuzhi.spring.cloud.alibaba.freeswitch.mapper.ExtenMapper">
+  <resultMap id="BaseResultMap" type="com.zhuzhi.spring.cloud.alibaba.freeswitch.domain.Exten">
+    <!--@mbg.generated generated on Tue Mar 31 13:59:37 CST 2020.-->
+    <!--@Table exten-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="userId" jdbcType="VARCHAR" property="userId" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="callgroup" jdbcType="VARCHAR" property="callgroup" />
+    <result column="effective_caller_id_name" jdbcType="VARCHAR" property="effective_caller_id_name" />
+    <result column="cdr_push_url" jdbcType="VARCHAR" property="cdr_push_url" />
+    <result column="pop_win_url" jdbcType="VARCHAR" property="pop_win_url" />
+    <result column="businessType" jdbcType="VARCHAR" property="businessType" />
+    <result column="enabled" jdbcType="VARCHAR" property="enabled" />
+    <result column="enabled_hand" jdbcType="VARCHAR" property="enabled_hand" />
+    <result column="exten_user" jdbcType="VARCHAR" property="exten_user" />
+    <result column="gateway" jdbcType="VARCHAR" property="gateway" />
+    <result column="timeout" jdbcType="VARCHAR" property="timeout" />
+    <result column="prephone" jdbcType="VARCHAR" property="prephone" />
+    <result column="ccrphone" jdbcType="VARCHAR" property="ccrphone" />
+    <result column="aftphone" jdbcType="VARCHAR" property="aftphone" />
+    <result column="backup_field1" jdbcType="VARCHAR" property="backup_field1" />
+    <result column="backup_field2" jdbcType="VARCHAR" property="backup_field2" />
+    <result column="backup_field3" jdbcType="VARCHAR" property="backup_field3" />
+    <result column="backup_field4" jdbcType="VARCHAR" property="backup_field4" />
+    <result column="backup_field5" jdbcType="VARCHAR" property="backup_field5" />
+    <result column="backup_field6" jdbcType="VARCHAR" property="backup_field6" />
+    <result column="addTime" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="editTime" jdbcType="TIMESTAMP" property="editTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Tue Mar 31 13:59:37 CST 2020.-->
+    id, userId, `password`, callgroup, effective_caller_id_name, cdr_push_url, pop_win_url, 
+    businessType, enabled, enabled_hand, exten_user, gateway, timeout, prephone, ccrphone, 
+    aftphone, backup_field1, backup_field2, backup_field3, backup_field4, backup_field5, 
+    backup_field6, addTime, editTime
+  </sql>
+</mapper>

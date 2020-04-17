@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuzhi.spring.cloud.alibaba.freeswitch.mapper.FsClusterMapper">
+  <resultMap id="BaseResultMap" type="com.zhuzhi.spring.cloud.alibaba.freeswitch.domain.FsCluster">
+    <!--@mbg.generated generated on Mon Mar 09 17:19:36 CST 2020.-->
+    <!--@Table fsCluster-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="port" jdbcType="VARCHAR" property="port" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="addTime" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="editTime" jdbcType="TIMESTAMP" property="editTime" />
+    <result column="isItOnLine" jdbcType="VARCHAR" property="isItOnLine" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Mon Mar 09 17:19:36 CST 2020.-->
+    id, `name`, ip, port, `password`, addTime, editTime, isItOnLine
+  </sql>
+</mapper>

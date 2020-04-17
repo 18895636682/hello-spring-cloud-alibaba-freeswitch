@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhuzhi.spring.cloud.alibaba.freeswitch.mapper.ZhuzCdrMapper">
+  <resultMap id="BaseResultMap" type="com.zhuzhi.spring.cloud.alibaba.freeswitch.domain.cdr.ZhuzCdr">
+    <!--@mbg.generated generated on Sat Apr 11 16:24:30 CST 2020.-->
+    <!--@Table zhuz_cdr-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <id column="createtime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="directiontype" jdbcType="INTEGER" property="directiontype" />
+    <result column="dialtype" jdbcType="INTEGER" property="dialtype" />
+    <result column="isoriginate" jdbcType="BOOLEAN" property="isOriginate" />
+    <result column="isCaller" jdbcType="BOOLEAN" property="isCaller" />
+    <result column="bridgestatustype" jdbcType="INTEGER" property="bridgeStatusType" />
+    <result column="zhuzsamecalluuid" jdbcType="VARCHAR" property="zhuzSameCallUuid" />
+    <result column="extfield" jdbcType="VARCHAR" property="extField" />
+    <result column="callerani" jdbcType="VARCHAR" property="callerani" />
+    <result column="callerid" jdbcType="VARCHAR" property="callerid" />
+    <result column="callernumber" jdbcType="VARCHAR" property="callerNumber" />
+    <result column="calleenumber" jdbcType="VARCHAR" property="calleeNumber" />
+    <result column="destinationnumber" jdbcType="VARCHAR" property="destinationNumber" />
+    <result column="dialedextension" jdbcType="VARCHAR" property="dialedextension" />
+    <result column="origcallernumer" jdbcType="VARCHAR" property="origcallernumer" />
+    <result column="digitsdialed" jdbcType="VARCHAR" property="digitsdialed" />
+    <result column="vasgateway" jdbcType="VARCHAR" property="vasgateway" />
+    <result column="answertime" jdbcType="TIMESTAMP" property="answerTime" />
+    <result column="bridgetime" jdbcType="TIMESTAMP" property="bridgeTime" />
+    <result column="hanguptime" jdbcType="TIMESTAMP" property="hangupTime" />
+    <result column="eventtime" jdbcType="TIMESTAMP" property="eventtime" />
+    <result column="queueansweredtime" jdbcType="TIMESTAMP" property="queueansweredtime" />
+    <result column="queuejoinedtime" jdbcType="TIMESTAMP" property="queuejoinedtime" />
+    <result column="otherlegcreatetime" jdbcType="TIMESTAMP" property="otherlegcreatetime" />
+    <result column="fullduration" jdbcType="INTEGER" property="fullDuration" />
+    <result column="realduration" jdbcType="INTEGER" property="realduration" />
+    <result column="routesec" jdbcType="INTEGER" property="routesec" />
+    <result column="ringingsec" jdbcType="INTEGER" property="ringingsec" />
+    <result column="bridgesec" jdbcType="INTEGER" property="bridgeSec" />
+    <result column="holdaccumsec" jdbcType="INTEGER" property="holdaccumsec" />
+    <result column="recordsec" jdbcType="INTEGER" property="recordsec" />
+    <result column="samecalluuid" jdbcType="VARCHAR" property="samecalluuid" />
+    <result column="uniqueidzhuz" jdbcType="VARCHAR" property="uniqueidzhuz" />
+    <result column="calleruniquid" jdbcType="VARCHAR" property="callerUniquId" />
+    <result column="calleeuniquid" jdbcType="VARCHAR" property="calleeUniquId" />
+    <result column="callerchannelname" jdbcType="VARCHAR" property="callerchannelname" />
+    <result column="calleechannelname" jdbcType="VARCHAR" property="calleechannelname" />
+    <result column="hangupcause" jdbcType="VARCHAR" property="hangupCause" />
+    <result column="hangupdisposition" jdbcType="VARCHAR" property="hangupdisposition" />
+    <result column="ccagent" jdbcType="VARCHAR" property="ccagent" />
+    <result column="ccqueue" jdbcType="VARCHAR" property="ccqueue" />
+    <result column="ccside" jdbcType="VARCHAR" property="ccside" />
+    <result column="recordfilename" jdbcType="VARCHAR" property="recordFilename" />
+    <result column="callercontext" jdbcType="VARCHAR" property="callercontext" />
+    <result column="lastapp" jdbcType="VARCHAR" property="lastapp" />
+    <result column="lastarg" jdbcType="VARCHAR" property="lastarg" />
+    <result column="callerreadcodec" jdbcType="VARCHAR" property="callerreadcodec" />
+    <result column="calleereadcodec" jdbcType="VARCHAR" property="calleereadcodec" />
+    <result column="callerwritecodec" jdbcType="VARCHAR" property="callerwritecodec" />
+    <result column="calleewritecodec" jdbcType="VARCHAR" property="calleewritecodec" />
+    <result column="callerdtmftype" jdbcType="VARCHAR" property="callerdtmftype" />
+    <result column="calleedtmftype" jdbcType="VARCHAR" property="calleedtmftype" />
+    <result column="callersipuseragent" jdbcType="VARCHAR" property="callersipuseragent" />
+    <result column="calleesipuseragent" jdbcType="VARCHAR" property="calleesipuseragent" />
+    <result column="callersipnetworkip" jdbcType="VARCHAR" property="callersipnetworkip" />
+    <result column="callersipnetworkport" jdbcType="VARCHAR" property="callersipnetworkport" />
+    <result column="calleesipnetworkip" jdbcType="VARCHAR" property="calleesipnetworkip" />
+    <result column="calleesipnetworkport" jdbcType="VARCHAR" property="calleesipnetworkport" />
+    <result column="callerremotemediaip" jdbcType="VARCHAR" property="callerremotemediaip" />
+    <result column="callerremotemediaport" jdbcType="VARCHAR" property="callerremotemediaport" />
+    <result column="calleeremotemediaip" jdbcType="VARCHAR" property="calleeremotemediaip" />
+    <result column="calleeremotemediaport" jdbcType="VARCHAR" property="calleeremotemediaport" />
+    <result column="consumerId" jdbcType="VARCHAR" property="consumerId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Sat Apr 11 16:24:30 CST 2020.-->
+    id, createtime, directiontype, dialtype, isoriginate, isCaller, bridgestatustype, 
+    zhuzsamecalluuid, extfield, callerani, callerid, callernumber, calleenumber, destinationnumber, 
+    dialedextension, origcallernumer, digitsdialed, vasgateway, answertime, bridgetime, 
+    hanguptime, eventtime, queueansweredtime, queuejoinedtime, otherlegcreatetime, fullduration, 
+    realduration, routesec, ringingsec, bridgesec, holdaccumsec, recordsec, samecalluuid, 
+    uniqueidzhuz, calleruniquid, calleeuniquid, callerchannelname, calleechannelname, 
+    hangupcause, hangupdisposition, ccagent, ccqueue, ccside, recordfilename, callercontext, 
+    lastapp, lastarg, callerreadcodec, calleereadcodec, callerwritecodec, calleewritecodec, 
+    callerdtmftype, calleedtmftype, callersipuseragent, calleesipuseragent, callersipnetworkip, 
+    callersipnetworkport, calleesipnetworkip, calleesipnetworkport, callerremotemediaip, 
+    callerremotemediaport, calleeremotemediaip, calleeremotemediaport, consumerId
+  </sql>
+</mapper>
