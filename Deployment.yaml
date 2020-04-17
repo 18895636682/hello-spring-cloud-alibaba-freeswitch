@@ -34,5 +34,5 @@ spec:
   - name: http
     port: 8024
     targetPort: 8024
-    nodePort: 32104
+    nodePort: 32105
 

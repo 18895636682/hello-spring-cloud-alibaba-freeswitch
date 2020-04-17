@@ -73,7 +73,7 @@ k8s-deploy-release:
     - sed -i "s|{CI_PROJECT_NAME}|$PROJECT_NAME|g" Deployment.yaml
     - sed -i "s|{DOCKER_IMAGE}|$DC_URI|g" Deployment.yaml
     - sed -i "s|{K8S_NAMESPACE}|$K8S_NAMESPACE|g" Deployment.yaml
-    - sed -i "s|{REPLICAS}|1|g" Deployment.yaml
+    - sed -i "s|{REPLICAS}|2|g" Deployment.yaml
     - kubectl apply -f Deployment.yaml --record
   tags:
     - shared-runner
