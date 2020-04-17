@@ -1,7 +1,7 @@
 variables:
   MAVEN_OPTS: "-Dmaven.repo.local=/opt/.m2/repository"              # 指定maven本地库路径，配合7.2.4中的配置避免每次拉镜像
   DOCKER_DRIVER: overlay2                                            # 用overlay2优化性能
-  PROJECT_NAME: freeswitch-server                                               # 用Gitlab工程名环境变量做后面打包的名字
+  PROJECT_NAME: freeswitch-server-1                                               # 用Gitlab工程名环境变量做后面打包的名字
   DC_URI: $DH_REPO/$PROJECT_NAME:$CI_COMMIT_SHA  # docker项目全路径 docker
   K8S_IMAGE: $DH_REPO/kubectl:1.11.0         # k8s发布镜像
 
@@ -73,7 +73,7 @@ k8s-deploy-release:
     - sed -i "s|{CI_PROJECT_NAME}|$PROJECT_NAME|g" Deployment.yaml
     - sed -i "s|{DOCKER_IMAGE}|$DC_URI|g" Deployment.yaml
     - sed -i "s|{K8S_NAMESPACE}|$K8S_NAMESPACE|g" Deployment.yaml
-    - sed -i "s|{REPLICAS}|2|g" Deployment.yaml
+    - sed -i "s|{REPLICAS}|3|g" Deployment.yaml
     - kubectl apply -f Deployment.yaml --record
   tags:
     - shared-runner
