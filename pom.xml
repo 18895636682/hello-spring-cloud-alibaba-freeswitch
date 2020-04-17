@@ -175,6 +175,7 @@
         <!-- Spring Cloud End -->
     </dependencies>
     <build>
+        <finalName>freeswitch-server</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
